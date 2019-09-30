@@ -1,0 +1,32 @@
+.Login {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+}
+
+
+#passIcon {
+    top: 10px;
+    position: relative;
+    right: 25px;
+    z-index: 3;
+}
+
+#password-field {
+    border-radius: .25rem;
+}
+
+.loginBtn {
+    margin-top: 35px;
+    border-radius: 20px;
+    width: 96%;
+}
+
+.userName {
+    width: 96%;
+}
