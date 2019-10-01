@@ -1,1 +1,22 @@
 node_modules/
+
+# OSX
+.DS_Store
+
+# Compiled binary addons (http://nodejs.org/api/addons.html)
+build/Release
+
+
+# App packaged
+release
+src/main.js
+src/main.js.map
+src/renderer.js
+src/renderer.js.map
+src/style.css
+src/style.css.map
+dist
+main.js
+main.js.map
+
+npm-debug.log.*
