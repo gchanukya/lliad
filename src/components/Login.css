@@ -1,3 +1,6 @@
+body {
+    background-color: gray;
+}
 .Login {
     position: absolute;
     margin: auto;
@@ -5,8 +8,52 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 80%;
-    height: 300px;
+}
+
+@media (min-width: 600px) {
+    .Login {
+        width: 40%;
+        height: 42%;
+    } 
+}
+
+@media only screen and (max-width: 350px) {
+    .Login {
+        width: 60%;
+        height: 50%;
+    } 
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+    .Login {
+        width: 60%;
+        height: 40%;
+    } 
+}
+
+@media (min-width: 600px) and (max-height: 584px) {
+    .Login {
+        width: 40%;
+        height: 60%;
+    } 
+}
+
+@media (max-width: 350px) and (max-height: 584px) {
+    .Login {
+        width: 60%;
+        height: 50%;
+    } 
+}
+
+@media (min-width: 350px) and (max-width: 600px) and (max-height: 584px) {
+    .Login {
+        width: 60%;
+        height: 60%;
+    } 
+}
+
+.cardBackGround {
+    background-color: gainsboro;
 }
 
 #passIcon {
@@ -14,6 +61,7 @@
     position: relative;
     right: 25px;
     z-index: 3;
+    width: 0px;
 }
 
 #password-field {
@@ -23,9 +71,21 @@
 .loginBtn {
     margin-top: 35px;
     border-radius: 20px;
-    width: 96%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
-.userName {
-    width: 96%;
+.loginBtn:hover {
+    background-color: seashell;
+    color: black;
+    border: 1px solid black; 
+}
+
+.loginBtn:disabled {
+    cursor:not-allowed;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    opacity: 0.5;
 }
